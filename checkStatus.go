@@ -9,7 +9,7 @@ import (
 	"github.com/jpillora/backoff"
 )
 
-func Check(elasticserver string, attempts int) bool {
+func CheckStatus(elasticserver string, attempts int) bool {
 
 	var boolstat bool
 
@@ -71,6 +71,6 @@ func Check(elasticserver string, attempts int) bool {
 			}
 		}
 	}
-	
+
 	return boolstat
 }
