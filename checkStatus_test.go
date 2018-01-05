@@ -19,7 +19,7 @@ func TestCheck(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			result := CheckStatus(tt.args.elasticserver, tt.args.attempts)
 			if result != tt.args.result {
-          t.Errorf("Sum of (%d+%d) was incorrect, got: %d, want: %d.", tt.args.elasticserver, tt.args.attempts, result, tt.args.result)
+          t.Errorf("Result of (%d+%d) was incorrect, got: %d, want: %d.", tt.args.elasticserver, tt.args.attempts, result, tt.args.result)
       }
 		})
 	}
